@@ -30,4 +30,19 @@ class CalculatorTest {
         val result = calculator.subtract(-1.0, -5.0)
         assertEquals(result, 4.0)
     }
+    @Test
+    fun testMultiplicationPositiveNumber() {
+        val result = calculator.multiply(8.0, 5.0)
+        assertEquals(result, 40.0)
+    }
+    @Test
+    fun testMultiplicationNegativeNumber() {
+        val result = calculator.multiply(-3.0, 6.0)
+        assertEquals(result, -18.0)
+    }
+    @Test
+    fun testMultiplicationByZero(){
+        val result = calculator.multiply(105.0, 0.0)
+        assertEquals(result, 0.0)
+    }
 }
