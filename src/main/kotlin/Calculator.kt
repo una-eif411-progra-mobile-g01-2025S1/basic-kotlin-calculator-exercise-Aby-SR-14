@@ -8,7 +8,7 @@ class Calculator{
     fun multiply (a : Double, b: Double): Double{
         return a*b
     }
-    fun division(a: Double, b:Double): Double{
+    fun divide(a: Double, b:Double): Double{
         if(b == 0.0){
             throw error("No se puede dividir entre cero")
         }

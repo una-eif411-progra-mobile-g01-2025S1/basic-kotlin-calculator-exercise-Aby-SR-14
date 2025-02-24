@@ -49,7 +49,7 @@ class CalculatorTest {
     @Test
     fun testDivisionByZero(){
         try {
-            val result = calculator.division(105.0, 0.0)
+            val result = calculator.divide(105.0, 0.0)
             assertTrue(false)
         }catch(e: Exception){
             e.printStackTrace()
@@ -57,13 +57,13 @@ class CalculatorTest {
     }
     @Test
     fun testDivisionPositiveNumbers(){
-        val result = calculator.division(8.0, 5.0)
+        val result = calculator.divide(8.0, 5.0)
         assertEquals(result, 1.6)
     }
 
     @Test
     fun testDivisionByNegative(){
-        val result =calculator.division(-30.0,5.0)
+        val result =calculator.divide(-30.0,5.0)
         assertEquals(result, -6.0)
     }
 }
