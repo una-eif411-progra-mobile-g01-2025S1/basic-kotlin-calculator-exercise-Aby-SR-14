@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
@@ -44,5 +45,25 @@ class CalculatorTest {
     fun testMultiplicationByZero(){
         val result = calculator.multiply(105.0, 0.0)
         assertEquals(result, 0.0)
+    }
+    @Test
+    fun testDivisionByZero(){
+        try {
+            val result = calculator.division(105.0, 0.0)
+            assertTrue(false)
+        }catch(e: Exception){
+            e.printStackTrace()
+        }
+    }
+    @Test
+    fun testDivisionPositiveNumbers(){
+        val result = calculator.division(8.0, 5.0)
+        assertEquals(result, 1.6)
+    }
+
+    @Test
+    fun testDivisionByNegative(){
+        val result =calculator.division(-30.0,5.0)
+        assertEquals(result, -6.0)
     }
 }
