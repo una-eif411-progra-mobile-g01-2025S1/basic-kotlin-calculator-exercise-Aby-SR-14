@@ -15,4 +15,9 @@ class CalculatorTest {
         val result = calculator.add(1.0, 1.0)
         assertEquals(result, 2.0)
     }
+    @Test
+    fun testAdditionNegativeNumber() {
+        val result = calculator.add(-1.0, 0.0)
+        assertEquals(result, -1.0)
+    }
 }
