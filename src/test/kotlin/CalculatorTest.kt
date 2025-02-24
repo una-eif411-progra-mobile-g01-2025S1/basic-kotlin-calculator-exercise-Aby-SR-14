@@ -20,4 +20,14 @@ class CalculatorTest {
         val result = calculator.add(-1.0, 0.0)
         assertEquals(result, -1.0)
     }
+    @Test
+    fun testSubtractionPositiveNumber() {
+        val result = calculator.subtract(1.0, 1.0)
+        assertEquals(result, 0.0)
+    }
+    @Test
+    fun testSubtractionNegativeNumber() {
+        val result = calculator.subtract(-1.0, -5.0)
+        assertEquals(result, 4.0)
+    }
 }
