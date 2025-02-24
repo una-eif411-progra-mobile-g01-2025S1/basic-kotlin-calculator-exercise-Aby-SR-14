@@ -2,7 +2,11 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
-
+/* Universidad Nacional de Costa Rica
+* Laboratorio viernes 21 de feberero, 2025
+* Abigail Salas Ramirez
+* 402570890
+* */
 class CalculatorTest {
     private lateinit var calculator: Calculator
 
